@@ -1,0 +1,87 @@
+/* Body Container */
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: #fffbf2; /* Warm background */
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+/* Description Section */
+.description {
+  max-width: 500px;
+}
+
+.description h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6600; /* Vibrant Orange */
+  margin-bottom: 15px;
+}
+
+.description p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Shop Now Button */
+.shop-btn {
+  background: #ff6600;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.shop-btn:hover {
+  background: #e65c00;
+  transform: scale(1.05);
+}
+
+/* Image Section */
+.img-container {
+  flex: 1;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .shop-btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+  .img-container img {
+    height: 400px;
+  }
+}

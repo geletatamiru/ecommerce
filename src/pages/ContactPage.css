@@ -1,0 +1,91 @@
+.contact-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero Section */
+.contact-hero {
+  background: url("../../public/images/shop2.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #f8f8f8;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #e65c00;
+}
+
+/* Contact Info */
+.contact-info {
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  color: white;
+}
+
+.social-icon {
+  background: #ff6600;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: #e65c00;
+}

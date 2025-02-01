@@ -1,0 +1,130 @@
+/* Cart Page Container */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  background-color:  #fffbf2;
+}
+
+/* Cart Title */
+.cart-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Cart Item List */
+.cart-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  width: 100%;
+}
+
+.cart-item img {
+  width: 200px;
+  height: 200px;
+  height: auto;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ff5733;
+}
+/* .cart-item img {
+  width: 80px;
+  height: 80px;
+ 
+  
+} */
+/* Cart Item Text */
+.cart-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cart-item p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Cart Item Actions */
+.cart-item button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.cart-item button:hover {
+  background-color: #ff4500;
+}
+
+/* Empty Cart Message */
+.empty-cart-message {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #555;
+}
+
+/* Clear Cart Button */
+.clear-cart-button {
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+.clear-cart-button:hover {
+  background-color: #228b22;
+}
+
+/* Responsive Design for Cart Items */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-item img {
+    margin-bottom: 10px;
+  }
+
+  .cart-item h2,
+  .cart-item p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Cart Summary */
+.cart-summary {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cart-summary div {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.cart-summary .total-price {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #32cd32;
+}

@@ -1,0 +1,39 @@
+.about-container {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background: #fffbf2;
+}
+
+.hero {
+  background: #f4f4f4;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.mission, .why-choose, .contact {
+  margin: 40px 0;
+}
+
+.why-choose .features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}

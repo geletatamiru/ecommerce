@@ -1,0 +1,120 @@
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffbf2; /* Warm background */
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo:hover {
+  cursor: pointer;
+}
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ff6600; /* Vibrant Orange */
+}
+
+/* Navigation Menu */
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #ff6600;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Cart Icon */
+.cart-icon {
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 15px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  color: #ff6600;
+}
+
+/* Hamburger Menu Button (Hidden by Default) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  /* Show Hamburger Menu */
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide Navigation Menu by Default */
+  .nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Show Menu When Open */
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav ul li {
+    padding: 10px 0;
+  }
+
+  /* Hide Search and Cart on Small Screens */
+  .header-icons {
+    display: none;
+  }
+}
